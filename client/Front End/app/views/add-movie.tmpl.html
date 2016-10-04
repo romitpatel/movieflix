@@ -1,0 +1,139 @@
+<div class='container'>
+    <form class='addmovie' ng-submit="addMovieVm.addMovie()" novalidate="" name="movieForm">
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Title" type="text" class="form-control" id="Title" name="Title" placeholder="Title" required="" />
+            <div class="error" ng-if="movieForm.Title.$dirty" ng-messages="movieForm.Title.$error">
+                <p ng-message="required">Title is required</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Year" type="number" class="form-control" id="Year" name="Year" placeholder="Year" required="" />
+            <div class="error" ng-if="movieForm.Year.$dirty" ng-messages="movieForm.Year.$error">
+                <p ng-message="required">Year is required</p>
+                <p ng-message="required">Year is a number</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Rated" type="text" class="form-control" id="Rated" name="Rated" placeholder="Rated" required="" />
+            <div class="error" ng-if="movieForm.Year.$dirty" ng-messages="movieForm.Year.$error">
+                <p ng-message="required">Rated is required</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Released" type="date" class="form-control" id="Released" name="Released" placeholder="Released" required="" />
+            <div class="error" ng-if="movieForm.Released.$dirty" ng-messages="movieForm.Released.$error">
+                <p ng-message="required">Release Date is required</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Runtime" type="text" class="form-control" id="Runtime" name="Runtime" placeholder="Runtime" required="" />
+            <div class="error" ng-if="movieForm.Runtime.$dirty" ng-messages="movieForm.Runtime.$error">
+                <p ng-message="required">Runtime is required in minutes</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Genre" type="text" class="form-control" id="Genre" name="Genre" placeholder="Genre" required="" />
+            <div class="error" ng-if="movieForm.Genre.$dirty" ng-messages="movieForm.Genre.$error">
+                <p ng-message="required">Genre is required</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Director" type="text" class="form-control" id="Director" name="Director" placeholder="Director" required="" />
+            <div class="error" ng-if="movieForm.Director.$dirty" ng-messages="movieForm.Director.$error">
+                <p ng-message="required">Director is required</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Writer" type="text" class="form-control" id="Writer" name="Writer" placeholder="Writer" required="" />
+            <div class="error" ng-if="movieForm.Writer.$dirty" ng-messages="movieForm.Writer.$error">
+                <p ng-message="required">Writer is required</p>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.Actors" type="text" class="form-control" id="Actors" name="Actors" placeholder="Actors" required="" />
+                <div class="error" ng-if="movieForm.Actors.$dirty" ng-messages="movieForm.Actors.$error">
+                    <p ng-message="required">Actors is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.Plot" type="text" class="form-control" id="Plot" name="Plot" placeholder="Plot" required="" />
+                <div class="error" ng-if="movieForm.Plot.$dirty" ng-messages="movieForm.Plot.$error">
+                    <p ng-message="required">Plot is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.Language" type="text" class="form-control" id="Language" name="Language" placeholder="Language" required="" />
+                <div class="error" ng-if="movieForm.Language.$dirty" ng-messages="movieForm.Language.$error">
+                    <p ng-message="required">Language is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.Country" type="text" class="form-control" id="Country" name="Country" placeholder="Country" required="" />
+                <div class="error" ng-if="movieForm.Country.$dirty" ng-messages="movieForm.Country.$error">
+                    <p ng-message="required">Country is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.Awards" type="text" class="form-control" id="Awards" name="Awards" placeholder="Awards" required="" />
+                <div class="error" ng-if="movieForm.Awards.$dirty" ng-messages="movieForm.Awards.$error">
+                    <p ng-message="required">Plot is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.Poster" type="text" class="form-control" id="Poster" name="Poster" placeholder="Poster" required="" />
+                <div class="error" ng-if="movieForm.Poster.$dirty" ng-messages="movieForm.Poster.$error">
+                    <p ng-message="required">Poster is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.Metascore" type="text" class="form-control" id="Metascore" name="Metascore" placeholder="Metascore" required="" />
+                <div class="error" ng-if="movieForm.Metascore.$dirty" ng-messages="movieForm.Metascore.$error">
+                    <p ng-message="required">Metascore is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.imdbRating" type="text" class="form-control" id="imdbRating" name="imdbRating" placeholder="imdbRating" required="" />
+                <div class="error" ng-if="movieForm.imdbRating.$dirty" ng-messages="movieForm.imdbRating.$error">
+                    <p ng-message="required">imdbRating is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.imdbVotes" type="number" class="form-control" id="imdbVotes" name="imdbVotes" placeholder="imdbVotes" required="" />
+                <div class="error" ng-if="movieForm.imdbVotes.$dirty" ng-messages="movieForm.imdbVotes.$error">
+                    <p ng-message="required">imdbVotes is required</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input ng-model="addMovieVm.newMovie.imdbID" type="text" class="form-control" id="imdbID" name="imdbID" placeholder="imdbID" required="" />
+                <div class="error" ng-if="movieForm.imdbID.$dirty" ng-messages="movieForm.imdbID.$error">
+                    <p ng-message="required">imdbID is required</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input ng-model="addMovieVm.newMovie.Type" type="text" class="form-control" id="Type" name="Type" placeholder="Type" required="" />
+            <div class="error" ng-if="movieForm.Type.$dirty" ng-messages="movieForm.Type.$error">
+                <p ng-message="required">Type is required</p>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="movieForm.$invalid">Add Movie</button>
+    </form>
+</div>

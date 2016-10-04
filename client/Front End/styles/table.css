@@ -1,0 +1,19 @@
+.table{
+    background: rgba(255,255,255,0.7);
+    border-radius:5px;
+
+}
+
+thead{
+    background: rgba(255,215,0,0.7);
+    border-radius:5px;
+}
+
+img{
+    height:80px;
+    width:60px;
+}
+
+.table td{
+
+}
