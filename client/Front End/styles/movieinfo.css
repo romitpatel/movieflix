@@ -1,0 +1,14 @@
+.table1 {
+    width: 50%;
+    float: left;
+}
+
+.table2 {
+    width: 50%;
+    float: right;
+}
+
+
+img{
+    border:2px solid black;
+}

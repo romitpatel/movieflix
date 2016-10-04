@@ -1,0 +1,23 @@
+<div class="moviesorter" ng-controller="TopRatedMovieController as topRatedMovieVm ">
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Title</th>
+            <th>IMDB Ratings</th>
+            <th>Year</th>
+            <th>IMDB Votes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="movie in topRatedMovieVm.movies| filter:searchText">
+            <td><img ng-src="{{movie.Poster}}"></td>
+            <td>{{movie.Title}}</td>
+            <td>{{movie.imdbRating}}</td>
+            <td>{{movie.Year}}</td>
+            <td>{{movie.imdbVotes}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>

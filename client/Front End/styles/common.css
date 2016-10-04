@@ -1,0 +1,18 @@
+body{
+    background: url("../images/login.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover ;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    position: relative;
+    overflow-x:hidden;
+    font-family: "Raleway";
+    font-color:#fff;
+    margin:20px;
+    padding: inherit;
+
+}
+
+.container{
+    background-color: rgba(0,0,0,0.7);
+}

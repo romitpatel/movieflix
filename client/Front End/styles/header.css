@@ -1,0 +1,67 @@
+header{
+    font-family: "raleway";
+    font-weight: 400;
+    padding: 15px 0 0 0;
+    display: inline-block;
+
+}
+
+header .navbar-brand{
+    height:20px;
+    /*font-weight: 300;*/
+    font-size: 18px;
+    padding:0px 25px 5px 0;
+    border-right: 1px solid #fff;
+    color: aqua;
+
+}
+
+strong{
+    font-weight: 900;
+    color: gold;
+}
+
+header .nav-tabs{
+    border-bottom: none;
+}
+
+header .nav-tabs>li>a{
+    font-size: 16px;
+    padding:0px 10px 5px 25px;
+    color:aqua;
+
+}
+
+header .nav-tabs>li>a:hover{
+    color: white;
+    background-color: transparent;
+    border:none;
+    font-wight: 400;
+}
+
+
+header .nav-tabs>li>a:focus{
+    background-color: transparent;
+}
+.input-group{
+    margin: 10px 0px;
+    padding-bottom: 5px;
+
+    /*padding: 15px 0px;*/
+
+}
+
+header .input-group .form-control{
+    color: white;
+    background-color: transparent;
+}
+
+header .btn-default{
+    color: dimgray;
+    background-color: transparent;
+}
+
+/*header .btn-default:hover{*/
+    /*color: white;*/
+    /*background-color: transparent;*/
+/*}*/

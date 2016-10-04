@@ -1,0 +1,13 @@
+<div  ng-controller="MovieController as movieVm">
+<p>{{movieVm.name}}</p>
+
+<div class="row wow fadeIn" data-wow-delay="1s">
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="movie in movieVm.movies">
+        <a class="thumbnail" ng-href="#/movie/{{movie.IMDBID}}">
+            <img class="img-responsive" ng-src="{{movie.Poster}}" alt="">
+        </a>
+    </div>
+</div>
+
+</div>
+<hr>

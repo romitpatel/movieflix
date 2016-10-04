@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="movieflix">
+<head>
+    <meta charset="UTF-8">
+
+    <!--Bootstrap,FontAwesome,GoogleFonts-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/third-party/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,900" rel="stylesheet">
+
+    <!--Application-CSS-->
+
+    <link rel="stylesheet" href="styles/common.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <link rel="stylesheet" href="styles/indexbody.css"/>
+    <link rel="stylesheet" href="styles/add-title.css"/>
+    <link rel="stylesheet" href="styles/movieinfo.css"/>
+    <link rel="stylesheet" href="styles/table.css"/>
+
+    <title>Movieflix</title>
+</head>
+
+<div class="container">
+
+    <header>
+
+        <div class="wow fadeIn" data-wow-delay="0.5s">
+
+            <span class="navbar-brand wow fadeIn" data-wow-delay="0.5s">Movie<strong>flix</strong></span>
+            <ul class="nav nav-tabs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#/movie/top=series">Top Rated Shows</a> </li>
+                <li><a href="#/add-movie">Add Title</a></li>
+                <li><a href="#/movie/top=movie">Top Rated Movies</a></li>
+
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+            </ul>
+
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Search</button>
+                    </span>
+            </div>
+
+        </div>
+
+    </header>
+    <!-----------------------------------------Body-------------------------------------------->
+
+    <div id="display" ng-view>
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.5.8/angular-messages.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/app.constant.js"></script>
+<script src="app/controllers/movie.controller.js"></script>
+<script src="app/controllers/addmovie.controller.js"></script>
+<script src="app/controllers/movieinfo.controller.js"></script>
+<script src="app/controllers/topratedmovie.controller.js"></script>
+<script src="app/controllers/topratedtv.controller.js"></script>
+<script src="app/services/movie.service.js"></script>
+</body>
+</html>
